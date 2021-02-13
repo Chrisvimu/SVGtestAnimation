@@ -5,15 +5,15 @@
 */
 /* DARK THEME*/
 .theme-dark {
-    background: hsla(222, 29%, 7%, 1);
+    background: hsla(205, 100%, 8%, 1);
 
-    background: linear-gradient(90deg, hsla(222, 29%, 7%, 1) 13%, hsla(357, 41%, 19%, 1) 39%, hsla(3, 55%, 34%, 1) 49%, hsla(357, 41%, 19%, 1) 59%, hsla(228, 26%, 7%, 1) 89%);
-    
-    /* background: -moz-linear-gradient(90deg, hsla(222, 29%, 7%, 1) 13%, hsla(357, 41%, 19%, 1) 39%, hsla(3, 55%, 34%, 1) 49%, hsla(357, 41%, 19%, 1) 59%, hsla(228, 26%, 7%, 1) 89%);
-    
-    background: -webkit-linear-gradient(90deg, hsla(222, 29%, 7%, 1) 13%, hsla(357, 41%, 19%, 1) 39%, hsla(3, 55%, 34%, 1) 49%, hsla(357, 41%, 19%, 1) 59%, hsla(228, 26%, 7%, 1) 89%);
-     */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0C0F16", endColorstr="#431C1E", GradientType=1 );
+background: linear-gradient(90deg, hsla(205, 100%, 8%, 1) 0%, hsla(258, 31%, 23%, 1) 45%, hsla(279, 33%, 29%, 1) 50%, hsla(258, 31%, 23%, 1) 55%, hsla(205, 100%, 8%, 1) 100%);
+/* 
+background: -moz-linear-gradient(90deg, hsla(205, 100%, 8%, 1) 0%, hsla(258, 31%, 23%, 1) 45%, hsla(279, 33%, 29%, 1) 50%, hsla(258, 31%, 23%, 1) 55%, hsla(205, 100%, 8%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(205, 100%, 8%, 1) 0%, hsla(258, 31%, 23%, 1) 45%, hsla(279, 33%, 29%, 1) 50%, hsla(258, 31%, 23%, 1) 55%, hsla(205, 100%, 8%, 1) 100%); */
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#001829", endColorstr="#34294E", GradientType=1 );
 }
 /*SVG*/
 svg {
