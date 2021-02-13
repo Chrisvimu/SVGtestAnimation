@@ -1,0 +1,145 @@
+/* ELEMENTS TO CONTROL SVG AND ANIMATIONS*/
+
+/*
+    THEMES
+*/
+/* DARK THEME*/
+.theme-dark {
+    background: hsla(222, 29%, 7%, 1);
+
+    background: linear-gradient(90deg, hsla(222, 29%, 7%, 1) 13%, hsla(357, 41%, 19%, 1) 39%, hsla(3, 55%, 34%, 1) 49%, hsla(357, 41%, 19%, 1) 59%, hsla(228, 26%, 7%, 1) 89%);
+    
+    /* background: -moz-linear-gradient(90deg, hsla(222, 29%, 7%, 1) 13%, hsla(357, 41%, 19%, 1) 39%, hsla(3, 55%, 34%, 1) 49%, hsla(357, 41%, 19%, 1) 59%, hsla(228, 26%, 7%, 1) 89%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(222, 29%, 7%, 1) 13%, hsla(357, 41%, 19%, 1) 39%, hsla(3, 55%, 34%, 1) 49%, hsla(357, 41%, 19%, 1) 59%, hsla(228, 26%, 7%, 1) 89%);
+     */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0C0F16", endColorstr="#431C1E", GradientType=1 );
+}
+/*SVG*/
+svg {
+    position: absolute;
+    left: -5em;
+    z-index: -1;
+    overflow:hidden;
+    width: 100vw;
+}
+.embers {
+    animation: embers-anim 1s  linear infinite reverse;
+}
+
+.leaves {
+    transform-origin: 40px 50px 0px;
+	animation: fall 7s linear infinite reverse;
+    animation: sway 5s linear infinite reverse;
+}
+
+.clouds1 {
+    animation: cloud-anim1 10s alternate infinite linear;
+}
+.clouds2 {
+    animation: cloud-anim2 8s alternate-reverse infinite linear;
+}
+
+@keyframes cloud-anim1 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-700px);
+    }
+}
+@keyframes cloud-anim2 {
+    from {
+        transform: translateX(-1);
+    }
+    to {
+        transform: translateX(100px);
+    }
+}
+
+@keyframes sway { 
+	0% { 
+		transform: rotateZ(-15deg) rotateX(55deg);
+        opacity: 0;
+	}
+    30% {
+		transform: rotateZ(20deg) rotateX(60deg);
+		animation-timing-function: ease-in-out;
+        opacity: 0.8;
+	}
+	60% { 
+		transform: rotateZ(-20deg) rotateX(55deg);
+		animation-timing-function: ease-in-out;
+        opacity: 1;
+	}
+    100% {
+		transform: rotateZ(0deg) rotateX(58deg);
+		animation-timing-function: cubic-bezier(0.990, 0.000, 0.890, 0.435);
+        opacity: 0;
+    }
+}
+@keyframes fall { 
+
+    
+    60% {
+        filter: drop-shadow(0px 160px 40px rgba(0,0,0,0));
+        
+    }
+    100% {
+        margin-top: 500px;
+        filter: drop-shadow(0px 5px 8px rgba(0,0,0,0.6));
+    }
+}
+
+@keyframes embers-anim {
+    from{
+        transform: translateY(-5%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(+7%);
+        opacity: 1;
+        /* animation: fadeIn 2s infinite alternate ease; */
+    }
+}
+
+.plants {
+    -webkit-animation:tree 4s linear infinite alternate-reverse;
+    -moz-animation:tree 4s linear infinite alternate-reverse;
+    animation:tree 4s linear infinite alternate-reverse;
+}
+.objects {
+    -webkit-animation:tree 4.2s linear infinite alternate-reverse;
+    -moz-animation:tree 4.2s linear infinite alternate-reverse;
+    animation:tree 4.2s linear infinite alternate-reverse;
+}
+.floor {
+    -webkit-animation:tree 4.6s linear infinite alternate-reverse;
+    -moz-animation:tree 4.6s linear infinite alternate-reverse;
+    animation:tree 4.6s linear infinite alternate-reverse;
+}
+.mountain {
+    -webkit-animation:tree 4.5s linear infinite alternate-reverse;
+    -moz-animation:tree 4.5s linear infinite alternate-reverse;
+    animation:tree 4.5s linear infinite alternate-reverse;
+}
+.space {
+    -webkit-animation:tree 3s linear infinite alternate-reverse;
+    -moz-animation:tree 3s linear infinite alternate-reverse;
+    animation:tree 3s linear infinite alternate-reverse;
+}
+.trees1 {
+    
+    -webkit-animation:tree 8s linear infinite alternate-reverse;
+    -moz-animation:tree 8s linear infinite alternate-reverse;
+    animation:tree 8s linear infinite alternate-reverse;
+}
+.trees2 {
+    
+    -webkit-animation:tree 5s linear infinite alternate-reverse;
+    -moz-animation:tree 5s linear infinite alternate-reverse;
+    animation:tree 5s linear infinite alternate-reverse;
+}
+@-moz-keyframes tree { 100% { -moz-transform: rotate(-1.5deg); } }
+@-webkit-keyframes tree { 100% { -webkit-transform: rotate(-1.5deg); } }
+@keyframes tree { 100% { -webkit-transform: rotate(-1.5deg); transform:rotate(-1.5deg); } }
